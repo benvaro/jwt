@@ -1,0 +1,16 @@
+<div class="login-page">
+  <div class="form">
+    <h2>Sign Up</h2>
+    <form class="login-form" (ngSubmit)="register();">
+      <input type="text" [(ngModel)]="model.FullName" placeholder="Full name" name="FullName" />
+      <input type="email" [(ngModel)]="model.Email" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Email" name="Email" />
+      <input type="password" [(ngModel)]="model.Password" placeholder="Password" name="Password" />
+      <input type="password" [(ngModel)]="confirmPassword" placeholder="Confirm password" name="confirmPassword" />
+      <input type="text" [(ngModel)]="model.Phone" placeholder="Phone number" name="PhoneNumber" />
+      <input type="text" [(ngModel)]="model.Address" placeholder="Address" name="Address" />
+      <button type="submit" class="btn btn-primary my-btn">Sign up</button>
+      <p class="message">Already a member? <a [routerLink]="['/sign-in']">Sign In</a></p>
+    </form>
+  </div>
+</div>
